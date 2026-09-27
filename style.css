@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg-color : #FCF1D0;
+    --bg-form: #22396F;
+    --primary-color : #000;
+}
+
+body{
+    background-color: var(--bg-form);
+    font-family: "Google Sans", sans-serif;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+.reg-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bg-color);
+    width: 350px;
+    margin: 200px auto;
+    padding: 30px 35px;
+    border-radius: 8px;
+}
+
+.reg-form label{
+    display: block;
+    padding: 2px 0;
+    font-weight: 400;
+}
+
+.reg-form input{
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid black;
+    
+}
+
+.reg-form button{
+    margin-top: 10px;
+    padding: 7px;
+    border-radius: 8px;
+    border: none;
+    background-color: #0D1C42;
+    color: white;
+    cursor: pointer;
+}
