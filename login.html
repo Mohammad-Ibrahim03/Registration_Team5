@@ -1,274 +1,46 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+    <div class="login-header">
+        <h2>Welcome Back</h2>
+        <p> Sign In</p>
+    </div>
+    
+    <div class="message"></div>
 
-    <title>Team 5 | Home</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-
-  <body>
-    <!-- HEADER -->
-    <header class="header">
-      <nav class="navbar container">
-        <a href="#home" class="logo">
-          Team <span>5</span>
-        </a>
-
-        <ul class="nav-links">
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#team">Our Team</a></li>
-        </ul>
-
-        <div class="nav-buttons">
-          <a href="#" class="btn btn-outline">Log In</a>
-          <a href="#" class="btn btn-primary">Sign Up</a>
+    <form>
+        <div class="input">
+            <label for="email">Email</label>
+            <input type="email" id="loginEmail" placeholder="name@example.com" required>
         </div>
-      </nav>
-    </header>
-
-    <!-- MAIN -->
-    <main>
-      <!-- HOME SECTION -->
-      <section class="hero" id="home">
-        <div class="hero-bg-circle circle-one"></div>
-        <div class="hero-bg-circle circle-two"></div>
-
-        <div class="hero-content container">
-          <div class="hero-text">
-            <span class="section-tag">WELCOME TO TEAM 5</span>
-
-            <h1>
-              Welcome To<br />
-              Our <span>Project.</span>
-            </h1>
-
-            <p>
-              We are Team 5, a group of creative minds working together
-              to turn ideas into meaningful digital experiences.
-              Discover our vision, explore our work, and get to know us.
-            </p>
-
-            <div class="hero-actions">
-              <a href="#about" class="btn btn-primary btn-large">
-                Discover More <span>→</span>
-              </a>
-
-              <a href="#team" class="btn btn-outline btn-large">
-                Meet Our Team
-              </a>
-            </div>
-
-            <div class="hero-stats">
-              <div class="stat">
-                <h3>5</h3>
-                <p>Team Members</p>
-              </div>
-
-              <div class="stat-divider"></div>
-
-              <div class="stat">
-                <h3>1</h3>
-                <p>Shared Vision</p>
-              </div>
-
-              <div class="stat-divider"></div>
-
-              <div class="stat">
-                <h3>∞</h3>
-                <p>Possibilities</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="hero-visual">
-            <div class="visual-card">
-              <div class="visual-top">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-
-              <div class="visual-content">
-                <span class="visual-label">OUR IDENTITY</span>
-                <h2>TEAM<br /><span>05</span></h2>
-                <div class="visual-line"></div>
-                <p>CREATIVITY · TEAMWORK · INNOVATION</p>
-              </div>
-
-              <div class="visual-decoration decoration-one"></div>
-              <div class="visual-decoration decoration-two"></div>
-            </div>
-
-            <div class="floating-badge badge-top">
-              <span class="badge-icon">✦</span>
-              Creative Minds
-            </div>
-
-            <div class="floating-badge badge-bottom">
-              <span class="badge-dot"></span>
-              Working Together
-            </div>
-          </div>
+        
+        <div class="input">
+            <label for="password">Password</label>
+            <input type="password" id="loginPassword" placeholder="*********" required>
         </div>
-
-        <a href="#about" class="scroll-indicator">
-          <span></span>
-          Scroll to explore
-        </a>
-      </section>
-
-      <!--  ABOUT US SECTION 
-      <section class="about section-padding" id="about">
-        <div class="container">
-          <div class="section-heading">
-            <span class="section-tag">GET TO KNOW US</span>
-            <h2>More Than A Team.<br /><span>A Shared Vision.</span></h2>
-            <p>
-              Every great project starts with a great team.
-              We bring together different perspectives, creative
-              thinking, and a shared passion for building something
-              meaningful.
-            </p>
-          </div>
-
-          <div class="about-grid">
-            <div class="about-main-card">
-              <span class="card-number">01 / WHO WE ARE</span>
-              <div class="about-symbol">✦</div>
-              <h3>We Are Team 5</h3>
-              <p>
-                We are a team of passionate individuals who believe
-                that collaboration and creativity can turn ambitious
-                ideas into real results. Our project represents our
-                skills, dedication, and commitment to learning.
-              </p>
-            </div>
-
-            <div class="about-side-cards">
-              <div class="about-card">
-                <span class="card-number">02 / OUR MISSION</span>
-                <h3>Creating With Purpose.</h3>
-                <p>
-                  To create useful, thoughtful, and engaging digital
-                  experiences through teamwork and innovation.
-                </p>
-              </div>
-
-              <div class="about-card">
-                <span class="card-number">03 / OUR VISION</span>
-                <h3>Building What's Next.</h3>
-                <p>
-                  To grow our skills, embrace new challenges, and
-                  transform our ideas into solutions that matter.
-                </p>
-              </div>
-            </div>
-          </div>
+        
+        <div class="options">
+            <label>
+                <input type="checkbox" id="loginRemember"> Remember me
+            </label>
+            <a href="#">Forgot password?</a>
         </div>
-      </section> -->
+        
+        <button type="submit" class="login-btn">Sign In</button>
+    </form>
+    
+    <div class="register-link">
+        Don't have an account? <a href="#">Sign up</a>
+    </div>
+</div>
 
-      <!-- OUR TEAM SECTION -->
-      <section class="team section-padding" id="team">
-        <div class="container">
-          <div class="team-heading">
-            <div>
-              <span class="section-tag">THE PEOPLE BEHIND THE PROJECT</span>
-              <h2>Meet Our <span>Team.</span></h2>
-            </div>
-
-            <p>
-              Five minds, one goal, and a passion for creating
-              something extraordinary.
-            </p>
-          </div>
-
-          <div class="team-grid">
-            <div class="team-card">
-              <div class="team-avatar">01</div>
-              <span class="team-role">TEAM MEMBER</span>
-              <h3>Member One</h3>
-              <p>Creative Thinker</p>
-            </div>
-
-            <div class="team-card">
-              <div class="team-avatar">02</div>
-              <span class="team-role">TEAM MEMBER</span>
-              <h3>Member Two</h3>
-              <p>Developer</p>
-            </div>
-
-            <div class="team-card">
-              <div class="team-avatar">03</div>
-              <span class="team-role">TEAM MEMBER</span>
-              <h3>Member Three</h3>
-              <p>Designer</p>
-            </div>
-
-            <div class="team-card">
-              <div class="team-avatar">04</div>
-              <span class="team-role">TEAM MEMBER</span>
-              <h3>Member Four</h3>
-              <p>Problem Solver</p>
-            </div>
-
-            <div class="team-card">
-              <div class="team-avatar">05</div>
-              <span class="team-role">TEAM MEMBER</span>
-              <h3>Member Five</h3>
-              <p>Innovator</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CALL TO ACTION -->
-      <section class="cta-section">
-        <div class="container cta-box">
-          <div>
-            <span class="section-tag">LET'S CREATE SOMETHING GREAT</span>
-            <h2>Our Journey Starts <span>Here.</span></h2>
-            <p>
-              Explore our project and discover what we can achieve
-              when creativity meets collaboration.
-            </p>
-          </div>
-
-          <a href="#home" class="btn btn-light btn-large">
-            Back To Home ↑
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container footer-content">
-        <a href="#home" class="logo">Team <span>5</span></a>
-
-        <p>Built with creativity and teamwork.</p>
-
-        <div class="footer-links">
-          <a href="#home">Home</a>
-          <a href="#team">Our Team</a>
-        </div>
-      </div>
-
-      <div class="container footer-bottom">
-        <p>© 2026 Team 5. All rights reserved.</p>
-        <p>Designed with purpose. Built together.</p>
-      </div>
-    </footer>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
