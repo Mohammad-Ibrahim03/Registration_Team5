@@ -51,4 +51,5 @@ loginForm.addEventListener("submit", function (event) {
         msg.appendChild(p);
     }
 //test tes test
+console.log("test ")
 });
